@@ -22,7 +22,7 @@
  * define objects (name space) for this library.
  * ----------------------------------------------------------------- */
 
-var html5jp = new window.html5jp || {};
+var html5jp = window.html5jp || {};
 
 (function() {
 
@@ -154,8 +154,8 @@ var html5jp = new window.html5jp || {};
         }
         // set a clipping path and draw the transformed image on the destination canvas.
         this.p.ctxd.save();
-        this.set_clipping_path(this.p.ctxd, [[d0x, d0y], [d1x, d1y], [d2x, d2y], [d3x, d3y]]);
         this.p.ctxd.drawImage(ctxt.canvas, 0, 0);
+        this._applyMask(this.p.ctxd, [[d0x, d0y], [d1x, d1y], [d2x, d2y], [d3x, d3y]]);
         this.p.ctxd.restore();
     }
 
@@ -171,14 +171,16 @@ var html5jp = new window.html5jp || {};
         return ctx;
     };
 
-    proto.set_clipping_path = function(ctx, points) {
+    proto._applyMask = function(ctx, points) {
         ctx.beginPath();
         ctx.moveTo(points[0][0], points[0][1]);
         for( var i=1; i<points.length; i++ ) {
             ctx.lineTo(points[i][0], points[i][1]);
         }
         ctx.closePath();
-        ctx.clip();
+        ctx.globalCompositeOperation = "destination-in";
+        ctx.fill();
+        ctx.globalCompositeOperation = "source-over";
     };
 
 })();
