@@ -111,6 +111,7 @@ var html5jp = window.html5jp || {};
         ctxt.clearRect(0, 0, ctxt.canvas.width, ctxt.canvas.height);
         if(base_index % 2 == 0) { // top or bottom side
             var ctxl = this.create_canvas_context(ow, cover_step);
+            ctxl.globalCompositeOperation = "copy";
             var cvsl = ctxl.canvas;
             for( var y=0; y<oh; y+=step ) {
                 var r = y / oh;
@@ -132,6 +133,7 @@ var html5jp = window.html5jp || {};
             }
         } else if(base_index % 2 == 1) { // right or left side
             var ctxl = this.create_canvas_context(cover_step, oh);
+            ctxl.globalCompositeOperation = "copy";
             var cvsl = ctxl.canvas;
             for( var x=0; x<ow; x+=step ) {
                 var r =  x / ow;
