@@ -187,3 +187,5 @@ var html5jp = window.html5jp || {};
 
 })();
 
+
+module.exports = html5jp.perspective;

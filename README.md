@@ -1,7 +1,7 @@
 # perspective.js
 
 **perspective.js** is a JavaScript library which allow you to transform a
-rectangle image into an arbitrary form of quadrilateral on a canavs element.
+rectangle image into an arbitrary form of quadrilateral on a canvas element.
 It is used to draw an image using perspective on a canvas.
 
 This is a derivative work of the original Futomi Hatano's **perspective.js** 

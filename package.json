@@ -1,0 +1,28 @@
+{
+  "name": "perspectivejs",
+  "version": "1.0.0",
+  "description": "Transforms the perspective of an image and draw it on a canvas",
+  "main": "src/perspective.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wanadev/perspective.js.git"
+  },
+  "keywords": [
+    "canvas",
+    "perspective",
+    "tranform"
+  ],
+  "author": "Futomi Hatano",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/wanadev/perspective.js/issues"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-browserify": "^3.8.0",
+    "grunt-contrib-uglify": "^0.9.1"
+  }
+}
