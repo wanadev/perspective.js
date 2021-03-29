@@ -1,31 +1,33 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html>
+  <head>
+    <title>Perspective.js demo</title>
+  </head>
 
-    <head>
-        <title>Perspective.js demo</title>
-    </head>
-
-    <body>
-        <canvas id="canvas"></canvas>
-        <script src="../dist/perspective.js"></script>
-        <script>
-            var canvas = document.getElementById("canvas");
-            var image = new Image();
-            image.onload = function() {
-                canvas.width = image.width;
-                canvas.height = image.height;
-                var ctx = canvas.getContext("2d");
-                var p = new Perspective(ctx, image);
-                p.draw([
-                        [30, 30],
-                        [image.width - 50, 50],
-                        [image.width - 70, image.height - 30],
-                        [10, image.height]
-                ]);
-            }
-            image.src = "firefox.jpg";
-        </script>
-    </body>
-
+  <body>
+    <canvas id="canvas"></canvas>
+    <script src="../dist/perspectivejs.min.js"></script>
+    <script>
+      var canvas = document.getElementById("canvas");
+      var image = new Image();
+      image.onload = function () {
+        canvas.width = image.width;
+        canvas.height = image.height;
+        var ctx = canvas.getContext("2d");
+        var p = new Perspective(ctx, image);
+        p.draw({
+          topLeftX: 30,
+          topLeftY: 30,
+          topRightX: image.width - 50,
+          topRightY: 50,
+          bottomRightX: image.width - 70,
+          bottomRightY: image.height - 30,
+          bottomLeftX: 10,
+          bottomLeftY: image.height,
+        });
+      };
+      image.src = "firefox.jpg";
+    </script>
+  </body>
 </html>

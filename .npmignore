@@ -1,3 +1,6 @@
 node_modules
+src
 dist
 demo
+rollup.config.json
+tsconfig.json

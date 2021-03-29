@@ -8,6 +8,44 @@ This is a derivative work of the original Futomi Hatano's **perspective.js**
 available at http://www.html5.jp/test/perspective_canvas/demo1_en.html
 
 
+## Usage
+
+```html
+<script src="../dist/perspectivejs.min.js"></script>
+```
+
+```js
+var p = new Perspective(ctx, image);
+p.draw({
+  topLeftX: 30,
+  topLeftY: 30,
+  topRightX: 462,
+  topRightY: 50,
+  bottomRightX: 442,
+  bottomRightY: 482,
+  bottomLeftX: 10,
+  bottomLeftY: 512,
+});
+```
+
+### ES5 (also supports typescript)
+
+```js
+import Perspective from "perspectivejs"
+
+let p = new Perspective(ctx, img)
+p.draw({
+  topLeftX: 30,
+  topLeftY: 30,
+  topRightX: 462,
+  topRightY: 50,
+  bottomRightX: 442,
+  bottomRightY: 482,
+  bottomLeftX: 10,
+  bottomLeftY: 512,
+})
+```
+
 ## License
 
     Copyright 2010 futomi  http://www.html5.jp/

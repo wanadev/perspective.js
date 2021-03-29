@@ -1,10 +1,15 @@
 {
   "name": "perspectivejs",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Transforms the perspective of an image and draw it on a canvas",
-  "main": "src/perspective.js",
+  "main": "./build/index.js",
+  "module": "./build/index.es.js",
+  "files": [
+    "build/**/*"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -16,13 +21,18 @@
     "tranform"
   ],
   "author": "Futomi Hatano",
-  "license": "Apache 2.0",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/wanadev/perspective.js/issues"
   },
   "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-browserify": "^3.8.0",
-    "grunt-contrib-uglify": "^0.9.1"
+    "@babel/core": "^7.13.14",
+    "@babel/preset-env": "^7.13.12",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-node-resolve": "^11.2.1",
+    "rollup": "^2.43.1",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "typescript": "^4.2.3"
   }
 }
