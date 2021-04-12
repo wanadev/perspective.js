@@ -6,6 +6,10 @@
 **perspective.ts** is a fork of [**perspective.js**](https://github.com/wanadev/perspective.js), which is itself a derivative work of the original [Futomi Hatano's **perspective.js**](http://www.html5.jp/test/perspective_canvas/demo1_en.html)
 
 
+## Codesandbox demo
+
+https://codesandbox.io/s/perspectivets-demo-upqfy
+
 ## Usage
 
 ```html
