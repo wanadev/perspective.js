@@ -1,17 +1,15 @@
-# perspective.js
+# perspective.ts
 
-**perspective.js** is a JavaScript library which allow you to transform a
-rectangle image into an arbitrary form of quadrilateral on a canvas element.
-It is used to draw an image using perspective on a canvas.
 
-This is a derivative work of the original Futomi Hatano's **perspective.js** 
-available at http://www.html5.jp/test/perspective_canvas/demo1_en.html
+**perspective.ts** is a TypeScript library which allow you to transform a rectangle image into an arbitrary form of quadrilateral on a canvas element. It is used to draw an image using perspective on a canvas.
+
+**perspective.ts** is a fork of [**perspective.js**](https://github.com/wanadev/perspective.js), which is itself a derivative work of the original [Futomi Hatano's **perspective.js**](http://www.html5.jp/test/perspective_canvas/demo1_en.html)
 
 
 ## Usage
 
 ```html
-<script src="../dist/perspectivejs.min.js"></script>
+<script src="../dist/perspectivets.min.js"></script>
 ```
 
 ```js
@@ -31,7 +29,7 @@ p.draw({
 ### ES5 (also supports typescript)
 
 ```js
-import Perspective from "perspectivejs"
+import Perspective from "perspectivets"
 
 let p = new Perspective(ctx, img)
 p.draw({
@@ -45,6 +43,24 @@ p.draw({
   bottomLeftY: 512,
 })
 ```
+
+## Development
+
+### Building
+
+```
+yarn build
+```
+
+### Testing
+
+No automated tests. But you can manually test using the demo:
+
+```
+http-server
+```
+
+And then open http://localhost:8080/demo/ in your browser.
 
 ## License
 

@@ -1,5 +1,5 @@
 {
-  "name": "perspectivejs",
+  "name": "perspectivets",
   "version": "2.0.0",
   "description": "Transforms the perspective of an image and draw it on a canvas",
   "main": "./build/index.js",
@@ -13,17 +13,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/wanadev/perspective.js.git"
+    "url": "https://github.com/adonmo/perspective.ts.git"
   },
   "keywords": [
     "canvas",
     "perspective",
     "tranform"
   ],
-  "author": "Futomi Hatano",
+  "author": "Adonmo",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/wanadev/perspective.js/issues"
+    "url": "https://github.com/adonmo/perspective.ts/issues"
   },
   "devDependencies": {
     "@babel/core": "^7.13.14",
