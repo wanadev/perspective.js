@@ -1,5 +1,5 @@
 # perspective.ts
-
+![npm](https://img.shields.io/npm/v/perspectivets) ![npm type definitions](https://img.shields.io/npm/types/typescript) ![GitHub](https://img.shields.io/github/license/adonmo/perspective.ts)
 
 **perspective.ts** is a TypeScript library which allow you to transform a rectangle image into an arbitrary form of quadrilateral on a canvas element. It is used to draw an image using perspective on a canvas.
 
