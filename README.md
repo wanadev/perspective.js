@@ -1,5 +1,7 @@
 # perspective.js
 
+[![Github](https://img.shields.io/github/stars/wanadev/yoga?label=Github&logo=github)](https://github.com/wanadev/perspective.js) [![npm](https://img.shields.io/npm/v/perspectivejs)](https://www.npmjs.com/package/perspectivejs) [![Discord](https://img.shields.io/badge/chat-Discord-8c9eff?logo=discord&logoColor=ffffff)](https://discord.gg/BmUkEdMuFp) [![License](https://img.shields.io/npm/l/perspectivejs)](https://github.com/wanadev/perspective.js/blob/master/LICENSE)
+
 **perspective.js** is a JavaScript library which allow you to transform a
 rectangle image into an arbitrary form of quadrilateral on a canvas element.
 It is used to draw an image using perspective on a canvas.
@@ -8,6 +10,11 @@ This is a derivative work of the original Futomi Hatano's **perspective.js**
 ~~available on www.html5.jp~~ [still available on Internet Archive][pjs-archive].
 
 [pjs-archive]: https://web.archive.org/web/20190810235509/http://www.html5.jp/test/perspective_canvas/demo1_en.html
+
+
+## Install from NPM
+
+    npm install perspectivejs
 
 
 ## Example usage
@@ -44,6 +51,7 @@ To build the files of the `dist/` folder, just use the following command:
 
 ## Changelog
 
+* **v1.0.2:** Documentation update (install from NPM, badges)
 * **v1.0.1:** Documentation update
 * **v1.0.0:** Initial release
 
