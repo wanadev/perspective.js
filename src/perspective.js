@@ -78,7 +78,7 @@ var html5jp = window.html5jp || {};
             Math.sqrt( Math.pow(d1x-d2x, 2) + Math.pow(d1y-d2y, 2) ), // right side
             Math.sqrt( Math.pow(d2x-d3x, 2) + Math.pow(d2y-d3y, 2) ), // bottom side
             Math.sqrt( Math.pow(d3x-d0x, 2) + Math.pow(d3y-d0y, 2) )  // left side
-                ];
+        ];
         //
         var ow = this.p.cvso.width;
         var oh = this.p.cvso.height;

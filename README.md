@@ -4,8 +4,48 @@
 rectangle image into an arbitrary form of quadrilateral on a canvas element.
 It is used to draw an image using perspective on a canvas.
 
-This is a derivative work of the original Futomi Hatano's **perspective.js** 
-available at http://www.html5.jp/test/perspective_canvas/demo1_en.html
+This is a derivative work of the original Futomi Hatano's **perspective.js**
+~~available on www.html5.jp~~ [still available on Internet Archive][pjs-archive].
+
+[pjs-archive]: https://web.archive.org/web/20190810235509/http://www.html5.jp/test/perspective_canvas/demo1_en.html
+
+
+## Example usage
+
+```javascript
+    // ctx (CanvasRenderingContext2D): The 2D context of a HTML5 canvas element.
+    // image (Image): The image to transform.
+    var p = new Perspective(ctx, image);
+    p.draw([
+        [30, 30],                               // Top-left [x, y]
+        [image.width - 50, 50],                 // Top-right [x, y]
+        [image.width - 70, image.height - 30],  // bottom-right [x, y]
+        [10, image.height]                      // bottom-left [x, y]
+    ]);
+```
+
+![Preview](./preview.png)
+
+See [demo/index.html](./demo/demo.html) for the complete example.
+
+
+## See also
+
+* [perspective.ts](https://github.com/adonmo/perspective.ts): A TypeScript version of this library.
+
+
+## Building the dist files
+
+To build the files of the `dist/` folder, just use the following command:
+
+    npm install
+    npx grunt
+
+
+## Changelog
+
+* **v1.0.1:** Documentation update
+* **v1.0.0:** Initial release
 
 
 ## License
