@@ -1,6 +1,6 @@
 {
   "name": "perspectivejs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Transforms the perspective of an image and draw it on a canvas",
   "main": "src/perspective.js",
   "scripts": {
