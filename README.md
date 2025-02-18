@@ -53,6 +53,10 @@ To build the files of the `dist/` folder, just use the following command:
 
 * **[NEXT]** (changes on `master`, but not released yet):
 
+  * Nothing yet :)
+
+* **v1.0.4:**
+
   * fix: Use `Math.atan2()` to allow rotating the image to more than 90° (@zhiqisuns, #14)
 
 * **v1.0.3:**
