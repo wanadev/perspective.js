@@ -51,10 +51,25 @@ To build the files of the `dist/` folder, just use the following command:
 
 ## Changelog
 
-* **v1.0.3:** Use a clip path instead of a mask to avoid clearing the canvas (#9)
-* **v1.0.2:** Documentation update (install from NPM, badges)
-* **v1.0.1:** Documentation update
-* **v1.0.0:** Initial release
+* **[NEXT]** (changes on `master`, but not released yet):
+
+  * fix: Use `Math.atan2()` to allow rotating the image to more than 90° (@zhiqisuns, #14)
+
+* **v1.0.3:**
+
+  * Use a clip path instead of a mask to avoid clearing the canvas (#9)
+
+* **v1.0.2:**
+
+  * Documentation update (install from NPM, badges)
+
+* **v1.0.1:**
+
+  * Documentation update
+
+* **v1.0.0:**
+
+  * Initial release
 
 
 ## License
